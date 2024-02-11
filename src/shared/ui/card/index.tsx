@@ -13,7 +13,7 @@ interface Props {
 export const Card: React.FC<Props> = ({ userName, image, course, color, description }) => {
     return (
         <div className='bg-[#ffffff] rounded-2xl overflow-hidden'>
-            <img className='h-[250px]' src={image} />
+            <img className='h-[250px] w-full object-top object-cover' src={image} />
             <div className='p-4'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-x-2'>
